@@ -32,8 +32,8 @@ jobs:
       run: |
         chmod +x ./gradlew
 
-    - name: Run gradle wrapper
-      run: ./gradlew wrapper
+    - name: Run gradle wrapper with version
+      run: ./gradlew wrapper --gradle-version 7.0.2
 
     - name: Build with Gradle
       run: ./gradlew build
