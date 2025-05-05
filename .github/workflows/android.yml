@@ -28,6 +28,10 @@ jobs:
         api-level: 30
         build-tools: 30.0.3
 
+    - name: Download and set executable permissions for gradlew
+      run: |
+        chmod +x ./gradlew
+
     - name: Build with Gradle
       run: ./gradlew build
 
